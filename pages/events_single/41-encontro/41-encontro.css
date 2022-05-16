@@ -1,0 +1,23 @@
+.events-mobile {
+    background-color: rgb(255,255,255) !important;
+  }
+  .events-mobile a{
+    color: red !important;
+    font-weight: bold !important;
+  }
+  .events {
+    color: rgb(294, 4, 51) !important;
+  }
+.event-gallery{
+    width: 50%;
+    height: auto;
+    margin: 40px auto;
+}
+img {
+  pointer-events: none;
+}
+@media screen and (max-width:800px){
+    .event-gallery{
+        width: 80%;
+    }
+}

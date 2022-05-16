@@ -1,0 +1,30 @@
+    <section class="contact-us">
+    <h2 class="red-title">Fale Conosco</h2>
+    <form action="https://formsubmit.co/phillip.menezes0206@gmail.com" method="POST" />
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://www.saminas.com.br/site_teste/thanks/thanks.html">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_subject" value="Contato Site!">
+        <input type="text" class="input-large" name="name" placeholder="Nome*" required>
+        <input type="text" class="input-large" name="email" placeholder="E-mail*" required>
+        <input type="text" class="input-large" id="number" name="number" required placeholder="Número*">
+        <textarea name="message" required placeholder="Mensagem*"></textarea>
+        <p>*Campos obrigatórios</p>
+        <div class="email-send" id="successMsg"></div>
+        <div class="submit"><input type="submit" id="submit"></div>
+    </form>
+    <section class="socials-btn">
+        <h2 class="red-title">Siga nas Redes Sociais</h2>
+        <div class="social-btn" onclick="instaCaller()">
+      <p><i class="fa-brands fa-instagram"></i> nos siga no instagram</p>
+        </div>
+        <div class="social-btn" onclick="faceCaller()">
+            <p><i class="fa-brands fa-facebook"></i> nos siga no facebook</p>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/0a21f8966f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../plugins/jmask/jquery.mask.js"></script>
+    <script >
+        $('#number').mask('(00) 00000-0000');
+    </script>
+    

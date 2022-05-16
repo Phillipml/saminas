@@ -1,0 +1,56 @@
+.thanks{
+    width: 50%;
+    height: auto;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.check-icon{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/check.png);
+    animation: blip 1s normal;
+}
+@keyframes blip{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.thanks h2{
+    text-align: center;
+    color: rgb(294, 4, 0);
+    padding: 5%;
+}
+.btn-center{
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.thanks a{
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+    border: 3px solid whitesmoke;
+    background-color: rgb(294, 4, 0);
+    padding: 5%;
+    text-decoration: none;
+}
+.thanks a:hover{
+    color: white;
+    border: 3px solid whitesmoke;
+    background-color: rgb(148, 2, 0);
+}

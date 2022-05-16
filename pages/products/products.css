@@ -1,0 +1,99 @@
+.products-mobile {
+    background-color: rgb(255,255,255) !important;
+  }
+  .products-mobile a{
+    color: red !important;
+    font-weight: bold !important;
+  }
+  .products {
+    color: rgb(294, 4, 51) !important;
+  }
+  .products-section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+}
+.products-title{
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+}
+.products-title h2{
+    font-size: 24px;
+    color: red;
+    text-align: center;
+}
+.products-title h4{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 2%;
+}
+.products-wraper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-single{
+    width: 33.3%;
+    height: 200px;
+    margin-bottom: 2%;
+}
+.product-single .item-box{
+    width: 50%;
+    height: 100%;
+    padding: 3%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product-single .item-box:hover{
+    border-width: 4px;
+    border-style: solid;
+    border-image:linear-gradient(to right, #e50400, #000000) 1;
+    animation: red-border-effect 1s normal infinite;
+    border-radius: 10%;
+}
+@keyframes red-border-effect{
+    0%{border-image:linear-gradient(to right, #e50400, #ccc) 1;}
+    20%{border-image:linear-gradient(to top, #ccc, #e50400) 1;}
+    40%{border-image:linear-gradient(to left, #e50400, #ccc) 1;}
+    60%{border-image:linear-gradient(to bottom, #ccc, #e50400) 1;}
+    100%{border-image:linear-gradient(to right, #e50400, #ccc) 1;}
+}
+.item-box .item-img{
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;  
+    transition: 0.5s;  
+}
+
+.item-box .prod-h5{
+    padding-top: 5%;
+    text-align: center;
+    font-size:14px;
+    color:red;
+    transition: 1s;
+}
+.item-box .item-img:hover{
+    background-size: 120%;
+}
+
+@media screen and (max-width: 1000px){
+    .item-box .item-img:hover{
+        background-size: 140%;
+    }
+    .product-single{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    .item-box .item-img:hover{
+        background-size: 120%;
+    }
+    .product-single{
+        width: 100%;
+    }
+}

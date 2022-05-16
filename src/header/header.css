@@ -1,0 +1,325 @@
+.whatsapp-btn {
+    z-index: 999;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/logo_whatsapp.png);
+    cursor: pointer;
+    
+  }
+  .whatsapp-btn:hover{
+    animation: alert 0.5s infinite normal;
+  }
+  @keyframes alert {
+    0%{
+      right:30px
+    }
+    100%{
+      right: 25px;
+    }
+
+    
+  }
+  .menu-mobile-icon {
+    display: none;
+    z-index: 999999;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    width: 65px;
+    height: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/mobile-menu.png);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .menu-mobile-clicked {
+    background-image: url(images/mobile-menu-clicked.png);
+  }
+  .menu-mobile-icon:hover {
+    -webkit-filter: drop-shadow(2px 2px 5px #e50400);
+    filter: drop-shadow(2px 2px 5px #e50400);
+  }
+  header {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    
+  }
+  header .logo-header {
+    z-index: 100;
+    display: inline-block;
+    position: absolute;
+    left: 2%;
+    width: 320px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/logo_header.png);
+    animation-name: left2right;
+    animation-duration: 2s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  @keyframes left2right {
+    0% {
+      left: -50%;
+    }
+  
+    100% {
+      left: 2%;
+    }
+  }
+  header .header-info {
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 60%;
+    height: 75px;
+    animation-name: contactfadeIn;
+    animation-duration: 2s;
+  }
+  @keyframes contactfadeIn {
+    from {
+      top:-20%;
+    }
+  
+    to {
+      top:2%;
+    }
+  }
+  header .header-info-number {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+  }
+  header .header-info-center {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .info-img {
+    display: inline-block;
+    padding-left: 2%;
+    width: 35px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .info-span {
+    position: relative;
+    top: -12px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(229, 4, 0);
+  }
+  .header-info-number .info-wpp-img {
+    background-image: url(images/wpp_img.png);
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .header-info-number .info-tel-img {
+    background-image: url(images/tel_img.png);
+  }
+  header .header-info-social {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+  }
+  .info-email-img {
+    background-image: url(images/email-red.png);
+  }
+  .info-inst-img {
+    background-image: url(images/inst-red.png);
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .info-face-img {
+    background-image: url(images/face-red.png);
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  .desktop-back {
+    position: relative;
+    top: 65%;
+    width: 100%;
+    height: 35px;
+    background: rgb(246, 246, 246);
+    background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 1) 0%,
+      rgb(172, 172, 172) 100%
+    );
+  }
+  nav.desktop {
+    float: right;
+    width: 65%;
+    height: 30px;
+  }
+  nav.desktop ul {
+    list-style: none;
+    text-align: center;
+    list-style: none;
+  }
+  .padding-left {
+    padding-left: 30px;
+  }
+  nav.desktop ul li {
+    display: inline-block;
+    line-height: 35px;
+  }
+  
+  nav.desktop ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    transition: 0.4s;
+  }
+  nav.desktop ul li a:hover {
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  nav.mobile {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #e3e3e3;
+    box-shadow: 4px 5px 10px #e3e3e3;
+  }
+  nav.mobile .gray-mobile {
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    background-color: gray;
+    border-bottom: 2px solid white;
+  }
+  nav.mobile .gray-mobile .white-logo-mobile {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-image: url(images/saminas-logo-white.png);
+  }
+  nav.mobile ul {
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+  nav.mobile ul li {
+    margin: 15px auto;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 10px;
+    background-color: rgb(229, 4, 0);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  nav.mobile ul li a {
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+  }
+  nav.mobile ul li:hover {
+    width: 400px;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  .inst-follow {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/insta-bg.jpg);
+  }
+  .inst-nav {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/inst-white.png);
+  }
+  .face-follow {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/face-bg.png);
+  }
+  .face-nav {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/face-white.png);
+  }
+  .wpp-nav {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/wpp-white.png);
+  }
+  @media screen and (max-width: 1100px) {
+    .info-img {
+        padding-left: 2%;
+        width: 30px;
+      }
+      .info-span {
+        font-size: 15px;
+      }
+    header .logo-header {
+      width: 295px;
+    }
+}
+  @media screen and (max-width: 800px) {
+    header {
+      margin: 0;
+    }
+    .menu-mobile-icon {
+      display: block;
+    }
+    header {
+      background-image: unset;
+      background-color: white;
+      margin: unset;
+    }
+    header .logo-header {
+      animation-name: unset;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    header .header-info {
+      display: none;
+    }
+    .desktop-back {
+      display: none;
+    }
+}
