@@ -1,3 +1,3 @@
-/github/repo-size/:Phillipml/:saminas
+/github/repo-size/Phillipml/saminas
 # saminas
 Projeto Saminas
