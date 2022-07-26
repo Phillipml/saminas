@@ -36,9 +36,13 @@ $(function () {
       window.open("pages/products_single/arame_corte/arame_corte.html","_self")
     });
 
-    $('#contactUsForm').load('src/form/form.html');
-    $('#importHeader').load('src/header/header.html'); 
-    $('#importFooter').load('src/footer/footer.html');  
+     
+    function load_home(){
+      $('#contactUsForm').load('src/form/form.html');
+      $('#importHeader').load('src/header/header.html'); 
+      $('#importFooter').load('src/footer/footer.html');
+}
+load_home();
     
    });
    

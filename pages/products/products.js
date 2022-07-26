@@ -81,19 +81,9 @@ $(function(){
 
         },
         {
-            id: 'tela_sombreamento',
-            image: 'tela_sombreamento1',
-            description: 'sombrites'
-        },
-        {
             id: 'carrinho_industrial',
             image: 'carrinho_industrial1',
             description: 'carrinho industrial'
-        },
-        {
-            id: 'embalagem_industrial',
-            image: 'embalagem1',
-            description: 'solução em embalagem industrial'
         },
         {
             id: 'resfriador_forno',
