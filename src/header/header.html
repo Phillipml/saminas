@@ -3,37 +3,54 @@
   <div class="whatsapp-btn" onclick="wppCaller()"></div>
   <div class="logo-header" onclick="callPage()"></div>
   <div class="header-info">
-      <div class="header-info-number">
-          <div class="header-info-center">
-          <div class="info-img info-tel-img"></div>
-          <span div class="info-span">(37) 3237-0100</span>
-          <div class="info-img info-wpp-img" onclick="wppCaller()"></div>
-          <span div class="info-span">(37) 99914-1084 | (37) 99903-8892</span>
-          </div>
+    <div class="header-info-number">
+      <div class="header-info-center">
+        <div class="info-img info-tel-img"></div>
+        <span div class="info-span">(37) 3237-0100</span>
+        <div class="info-img info-wpp-img" onclick="wppCaller()"></div>
+        <span div class="info-span">(37) 99914-1084 | (37) 99903-8892</span>
       </div>
-      <div class="header-info-social">
-          <div class="header-info-center">
-          <div class="info-img info-email-img"></div>
-          <span div class="info-span">vendas@saminas.com.br</span>
-          <div class="info-img info-inst-img" onclick="instaCaller()"></div>
-          <div class="info-img info-face-img" onclick="faceCaller()"></div>
-          </div>
+    </div>
+    <div class="header-info-social">
+      <div class="header-info-center">
+        <div class="info-img info-email-img"></div>
+        <span div class="info-span">vendas@saminas.com.br</span>
+        <div class="info-img info-wpp-click-img" onclick="wppCaller()"></div>
+        <div class="info-img info-inst-img" onclick="instaCaller()"></div>
+        <div class="info-img info-face-img" onclick="faceCaller()"></div>
       </div>
+    </div>
   </div>
   <div class="desktop-back">
-      <nav class="desktop">
-        <ul class="menu-animation">
-          <li><a id="inicio" class="index" onclick="callPage()">Início</a></li>
-          <li><a id="products" class="padding-left products" onclick="callPage('products')">Produtos</a></li>
-          <li><a id="events" class="padding-left events" onclick="callPage('events')">Eventos</a></li>
-        </ul>
-      </nav>
-      <div class="clear"></div>
+    <nav class="desktop">
+      <ul class="menu-animation">
+        <li><a id="inicio" class="index" onclick="callPage()">Início</a></li>
+        <li>
+          <a
+            id="products"
+            class="padding-left products"
+            onclick="callPage('products')"
+            >Produtos</a
+          >
+        </li>
+        <li>
+          <a
+            id="events"
+            class="padding-left events"
+            onclick="callPage('events')"
+            >Eventos</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
   </div>
-        <div class="menu-mobile-icon" id="menu-icon" onclick="handleMenu()"></div>
-        <div class="menu-mobile-clicked"></div>
+  <div class="menu-mobile-icon" id="menu-icon" onclick="handleMenu()"></div>
+  <div class="menu-mobile-clicked"></div>
   <nav class="mobile">
-    <div class="gray-mobile"><div class="white-logo-mobile" onclick="callPage()"></div></div>
+    <div class="gray-mobile">
+      <div class="white-logo-mobile" onclick="callPage()"></div>
+    </div>
     <ul>
       <li
         class="wpp-contact"
@@ -42,10 +59,14 @@
         <div class="wpp-nav"></div>
       </li>
       <li class="index-mobile">
-        <a  onclick="callPage()">Início</a>
+        <a onclick="callPage()">Início</a>
       </li>
-      <li class="products-mobile"><a id="products" onclick="callPage('products')">Produtos</a></li>
-      <li class="events-mobile"><a id="events" onclick="callPage('events')">Eventos</a></li>
+      <li class="products-mobile">
+        <a id="products" onclick="callPage('products')">Produtos</a>
+      </li>
+      <li class="events-mobile">
+        <a id="events" onclick="callPage('events')">Eventos</a>
+      </li>
       <li class="inst-follow" onclick="instaCaller()">
         <div class="inst-nav"></div>
       </li>
